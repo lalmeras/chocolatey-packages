@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega
+     letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>nomachine</id>
+    <version>5.2.21.1.0</version>
+    <packageSourceUrl>https://github.com/lalmeras/chocolatey-packages/</packageSourceUrl>
+    <owners>Laurent Almeras &lt;lalmeras@gmail.com&gt;</owners>
+
+    <title>NoMachine</title>
+    <authors>NoMachine</authors>
+    <projectUrl>https://www.nomachine.com/</projectUrl>
+    <copyright>Copyright 2002-2017, NoMachine S.à r.l.</copyright>
+    <docsUrl>https://www.nomachine.com/getting-started-with-nomachine</docsUrl>
+    <tags>nomachine remote control online</tags>
+    <summary>NoMachine remote-control tool (server and client)</summary>
+    <description>
+NoMachine is a remote-control tool, available for multiple platforms (Windows,
+Linux, Android, ...) which is easy to install and use. This version, that exists
+alongside paid Enterprise edition, is free to use.
+
+## Features
+
+Discover NoMachine features on official website : https://www.nomachine.com/what-s-new-in-nomachine
+
+> Travel from your desktop to any NoMachine-enabled computer at the speed of light.
+> Thanks to our NX technology, NoMachine is the fastest and highest quality remote
+> desktop you have ever tried. In just a few clicks you can reach any computer
+> in the world and start working on it as if it was right in front of you.
+
+From NoMachine https://www.nomachine.com/</description>
+    <dependencies>
+      <dependency id="chocolatey" version="0.9.10" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
