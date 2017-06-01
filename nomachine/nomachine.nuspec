@@ -13,7 +13,7 @@
     <projectUrl>https://www.nomachine.com/</projectUrl>
     <copyright>Copyright 2002-2017, NoMachine S.à r.l.</copyright>
     <docsUrl>https://www.nomachine.com/getting-started-with-nomachine</docsUrl>
-    <tags>nomachine remote control online</tags>
+    <tags>nomachine remote control online admin</tags>
     <summary>NoMachine remote-control tool (server and client)</summary>
     <description>
 NoMachine is a remote-control tool, available for multiple platforms (Windows,
@@ -31,7 +31,6 @@ Discover NoMachine features on official website : https://www.nomachine.com/what
 
 From NoMachine https://www.nomachine.com/</description>
     <dependencies>
-      <dependency id="chocolatey" version="0.9.10" />
     </dependencies>
   </metadata>
   <files>
