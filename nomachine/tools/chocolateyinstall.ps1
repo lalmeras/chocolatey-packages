@@ -2,7 +2,7 @@
 
 $packageName= 'nomachine'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'http://download.nomachine.com/download/6.0/Windows/nomachine_6.0.66_2.exe'
+$url        = 'http://download.nomachine.com/download/6.0/Windows/nomachine_6.0.80_1.exe'
 
 $packageArgs = @{
   packageName   = $packageName
@@ -11,7 +11,7 @@ $packageArgs = @{
   url           = $url
 
   softwareName  = 'NoMachine*'
-  checksum      = 'f618289c3d4a8847d113c4bda8fcc9db'
+  checksum      = '15da784c701ae831727c79627ba8fffb'
   checksumType  = 'md5'
 
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
