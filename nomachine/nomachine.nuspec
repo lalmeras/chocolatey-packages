@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nomachine</id>
-    <version>6.4.6.500</version>
+    <version>6.6.8.500</version>
     <packageSourceUrl>https://github.com/lalmeras/chocolatey-packages/</packageSourceUrl>
     <owners>Laurent Almeras &lt;lalmeras@gmail.com&gt;</owners>
 
@@ -12,7 +12,7 @@
     <authors>NoMachine</authors>
     <projectUrl>https://www.nomachine.com/</projectUrl>
     <releaseNotes>https://www.nomachine.com/softwareupdates</releaseNotes>
-    <copyright>Copyright 2002-2018, NoMachine S.à r.l.</copyright>
+    <copyright>Copyright 2002-2019, NoMachine S.à r.l.</copyright>
     <docsUrl>https://www.nomachine.com/getting-started-with-nomachine</docsUrl>
     <tags>nomachine remote control online admin</tags>
     <summary>NoMachine remote-control tool (server and client)</summary>
