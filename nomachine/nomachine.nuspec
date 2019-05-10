@@ -4,15 +4,17 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nomachine</id>
-    <version>6.6.8.500</version>
+    <version>6.6.8.501</version>
     <packageSourceUrl>https://github.com/lalmeras/chocolatey-packages/</packageSourceUrl>
     <owners>Laurent Almeras &lt;lalmeras@gmail.com&gt;</owners>
 
     <title>NoMachine</title>
     <authors>NoMachine</authors>
     <projectUrl>https://www.nomachine.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/lalmeras/chocolatey-packages@master/resources/nomachine-47441c26b11ed35bca7f105c2d9ba13e.png</iconUrl>
     <releaseNotes>https://www.nomachine.com/softwareupdates</releaseNotes>
     <copyright>Copyright 2002-2019, NoMachine S.à r.l.</copyright>
+    <licenseUrl>https://www.nomachine.com/licensing-6</licenseUrl>
     <docsUrl>https://www.nomachine.com/getting-started-with-nomachine</docsUrl>
     <tags>nomachine remote control online admin</tags>
     <summary>NoMachine remote-control tool (server and client)</summary>
@@ -30,7 +32,13 @@ Discover NoMachine features on official website : https://www.nomachine.com/what
 > desktop you have ever tried. In just a few clicks you can reach any computer
 > in the world and start working on it as if it was right in front of you.
 
-From NoMachine https://www.nomachine.com/</description>
+From NoMachine https://www.nomachine.com/
+
+## Package behavior (from 6.6.8.501)
+
+Chocolatey package automatically enables *Print Spooler* service as it is needed
+for a successful NoMachine installation
+(see https://twitter.com/LaurentAlmeras/status/1126175028993769482).</description>
     <dependencies>
     </dependencies>
   </metadata>
