@@ -2,7 +2,7 @@
 
 $packageName= 'nomachine'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.nomachine.com/download/7.0/Windows/nomachine_7.0.211_4.exe'
+$url        = 'https://download.nomachine.com/download/7.1/Windows/nomachine_7.1.3_1.exe'
 
 # Make sure Print Spooler service is up and running
 # stolen from hp-universal-print-driver-pcl/cutepdf package.
@@ -28,7 +28,7 @@ $packageArgs = @{
   url           = $url
 
   softwareName  = 'NoMachine*'
-  checksum      = '356f14374fda1381d22a047a7e49a439'
+  checksum      = 'c7d0cd877b6d280f618b927b6507a533'
   checksumType  = 'md5'
 
   silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
