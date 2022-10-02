@@ -6,7 +6,7 @@
     <id>nomachine</id>
     <version>8.1.2.100</version>
     <packageSourceUrl>https://github.com/lalmeras/chocolatey-packages/</packageSourceUrl>
-    <owners>Laurent Almeras &lt;lalmeras@gmail.com&gt;</owners>
+    <owners>Laurent Almeras</owners>
 
     <title>NoMachine</title>
     <authors>NoMachine</authors>
