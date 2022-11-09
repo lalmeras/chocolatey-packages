@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nomachine</id>
-    <version>8.1.2.100</version>
+    <version>8.2.3.400</version>
     <packageSourceUrl>https://github.com/lalmeras/chocolatey-packages/</packageSourceUrl>
     <owners>Laurent Almeras</owners>
 
