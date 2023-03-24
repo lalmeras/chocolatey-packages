@@ -4,7 +4,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>nomachine</id>
-    <version>8.4.2.900</version>
+    <version>8.4.2.100</version>
     <packageSourceUrl>https://github.com/lalmeras/chocolatey-packages/</packageSourceUrl>
     <owners>Laurent Almeras</owners>
 
@@ -33,6 +33,18 @@ Discover NoMachine features on official website : https://www.nomachine.com/what
 > in the world and start working on it as if it was right in front of you.
 
 From NoMachine https://www.nomachine.com/
+
+## Update from 8.2.4.9- versions on 64 bits environment
+
+From 8.2.4.10, chocolatey packaging choose nomachine 64 bits on 64 bits environment, but x86 to x64
+upgrade by nomachine installer does not work.
+
+You need to uninstall nomachine (also check windows add/remove applications) before reinstalling
+it with chocolatey.
+
+## x86 and x86_64 (from 8.4.2.100)
+
+From 8.4.2.100 installation uses appropriate packaging based on architecture and `--x86` option.
 
 ## Package behavior (from 6.6.8.501)
 

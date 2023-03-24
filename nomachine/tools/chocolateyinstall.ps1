@@ -2,7 +2,6 @@
 
 $packageName= 'nomachine'
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://download.nomachine.com/download/8.4/Windows/nomachine_8.4.2_9_x86.exe'
 
 # Make sure Print Spooler service is up and running
 # stolen from hp-universal-print-driver-pcl/cutepdf package.
@@ -22,17 +21,27 @@ try {
 }
 
 $packageArgs = @{
-  packageName   = $packageName
-  unzipLocation = $toolsDir
-  fileType      = 'exe'
-  url           = $url
+  packageName    = $packageName
+  unzipLocation  = $toolsDir
+  fileType       = 'exe'
 
-  softwareName  = 'NoMachine*'
-  checksum      = 'b189d5d5c9c81901384577f041399e96'
-  checksumType  = 'md5'
+  softwareName   = 'NoMachine*'
+  
+  url            = 'https://download.nomachine.com/download/8.4/Windows/nomachine_8.4.2_9_x86.exe'
+  checksum       = 'b189d5d5c9c81901384577f041399e96'
+  checksumType   = 'md5'
+  
+  url64          = 'https://download.nomachine.com/download/8.4/Windows/nomachine_8.4.2_10_x64.exe'
+  checksum64     = 'b3926f36f83d24b236a127da729066ec'
+  checksumType64 = 'md5'
 
-  silentArgs   = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
-  validExitCodes= @(0)
+  silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
+  validExitCodes = @(0)
 }
 
-Install-ChocolateyPackage @packageArgs
+try {
+	Install-ChocolateyPackage @packageArgs
+} catch {
+	Write-Warning 'Error installing package. If you update from 8.2.4.9 on a 64bit environment'
+	Write-Warning 'you need to uninstall nomachine and reinstall it.'
+}
