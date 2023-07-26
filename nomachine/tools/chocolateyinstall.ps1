@@ -27,12 +27,12 @@ $packageArgs = @{
 
   softwareName   = 'NoMachine*'
   
-  url            = 'https://download.nomachine.com/download/8.7/Windows/nomachine_8.7.1_6_x86.exe'
-  checksum       = '6dd91e30214f17f1c842e7e54c3d34ba'
+  url            = 'https://download.nomachine.com/download/8.8/Windows/nomachine_8.8.1_1_x86.exe'
+  checksum       = '9eb3dde9d1c5a4f9d57769af44f9afb5'
   checksumType   = 'md5'
   
-  url64          = 'https://download.nomachine.com/download/8.7/Windows/nomachine_8.7.1_6_x64.exe'
-  checksum64     = 'e2116e7ebcda20cc5367ad8e22336961'
+  url64          = 'https://download.nomachine.com/download/8.8/Windows/nomachine_8.8.1_1_x64.exe'
+  checksum64     = '9fbdefbd972ad0979fb5cbce6d719b53'
   checksumType64 = 'md5'
 
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
@@ -40,6 +40,13 @@ $packageArgs = @{
 }
 
 try {
+	# installer does not manage read-only files in silent mode
+	if (Test-Path -Path "C:\Program Files\NoMachine\lib\perl") {
+		Get-ChildItem 'C:\Program Files\NoMachine\lib\perl' -ReadOnly -Recurse | ForEach-Object { $_.IsReadOnly = $false }
+	}
+	if (Test-Path -Path "C:\Program Files (x86)\NoMachine\lib\perl") {
+		Get-ChildItem 'C:\Program Files (x86)\NoMachine\lib\perl' -ReadOnly -Recurse | ForEach-Object { $_.IsReadOnly = $false }
+	}
 	Install-ChocolateyPackage @packageArgs
 } catch {
 	Write-Warning 'Error installing package. If you update from 8.2.4.9 on a 64bit environment'
