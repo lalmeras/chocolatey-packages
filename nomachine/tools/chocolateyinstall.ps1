@@ -27,12 +27,12 @@ $packageArgs = @{
 
   softwareName   = 'NoMachine*'
   
-  url            = 'https://download.nomachine.com/download/8.11/Windows/nomachine_8.11.3_3_x86.exe'
-  checksum       = 'af89ab7dfdd92b7e1a31dd9f4b112893'
+  url            = 'https://download.nomachine.com/download/8.12/Windows/nomachine_8.12.12_4_x86.exe'
+  checksum       = 'a2e37b439efc3bfe791cfa3ab73a3059'
   checksumType   = 'md5'
   
-  url64          = 'https://download.nomachine.com/download/8.11/Windows/nomachine_8.11.3_3_x64.exe'
-  checksum64     = '6032c086ef91022e177ddd9af9c1ffed'
+  url64          = 'https://download.nomachine.com/download/8.12/Windows/nomachine_8.12.12_4_x64.exe'
+  checksum64     = '61df1d2e09b195157fcc672538b30e37'
   checksumType64 = 'md5'
 
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
@@ -51,4 +51,5 @@ try {
 } catch {
 	Write-Warning 'Error installing package. If you update from 8.2.4.9 on a 64bit environment'
 	Write-Warning 'you need to uninstall nomachine and reinstall it.'
+	Exit 1
 }
