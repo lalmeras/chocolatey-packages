@@ -27,12 +27,12 @@ $packageArgs = @{
 
   softwareName   = 'NoMachine*'
   
-  url            = 'https://download.nomachine.com/download/9.1/Windows/nomachine_9.1.24_6_x86.exe'
-  checksum       = '6b7c3ba41f488b73c9b9ef33aaf05381'
+  url            = 'https://web9001.nomachine.com/download/9.2/Windows/nomachine_9.2.18_1_x86.exe'
+  checksum       = '99735c65d531ad7e405cd6849e6b08cf'
   checksumType   = 'md5'
   
-  url64          = 'https://download.nomachine.com/download/9.1/Windows/nomachine_9.1.24_6_x64.exe'
-  checksum64     = '729fe6e2d690eb020cd9210d232dd713'
+  url64          = 'https://web9001.nomachine.com/download/9.2/Windows/nomachine_9.2.18_1_x64.exe'
+  checksum64     = '85acd71521c9801cf5bb5a2b5de8a08c'
   checksumType64 = 'md5'
 
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
