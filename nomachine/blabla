@@ -1,0 +1,53 @@
+﻿2026-08-08 00:37:46.691   Log opened. (Time zone: UTC+02:00)
+2026-08-08 00:37:46.691   Setup version: Inno Setup version 5.5.6 (u)
+2026-08-08 00:37:46.691   Original Setup EXE: C:\Users\lalmeras\AppData\Local\Temp\chocolatey\nomachine\10.0.57.200\nomachine-personal-edition_10.0.57_2_x64.exe
+2026-08-08 00:37:46.691   Setup command line: /SL5="$802B2,100523068,265216,C:\Users\lalmeras\AppData\Local\Temp\chocolatey\nomachine\10.0.57.200\nomachine-personal-edition_10.0.57_2_x64.exe" /SILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=blabla
+2026-08-08 00:37:46.691   Windows version: 10.0.26200  (NT platform: Yes)
+2026-08-08 00:37:46.691   64-bit Windows: Yes
+2026-08-08 00:37:46.691   Processor architecture: x64
+2026-08-08 00:37:46.691   User privileges: Administrative
+2026-08-08 00:37:46.736   64-bit install mode: Yes
+2026-08-08 00:37:46.742   Created temporary directory: C:\Users\lalmeras\AppData\Local\Temp\is-3UOCB.tmp
+2026-08-08 00:37:46.824   Extracting temporary file: C:\Users\lalmeras\AppData\Local\Temp\is-3UOCB.tmp\windows-installer-wave.bmp
+2026-08-08 00:37:46.830   NX> 700 Looking for installed NoMachine products.
+2026-08-08 00:37:46.832   NX> 700 Found HKLM\Software\Microsoft\Windows\CurrentVersion\Uninstall\NoMachine_is1 register.
+2026-08-08 00:37:46.832   NX> 700 NoMachine Enterprise Client register not found.
+2026-08-08 00:37:46.832   NX> 700 NoMachine AVC register not found.
+2026-08-08 00:37:46.832   NX> 700 NoMachine is already installed. Preparing to update.
+2026-08-08 00:37:46.832   NX> 700 Running update of NoMachine.
+2026-08-08 00:37:47.967   NX> 700 Running: C:\WINDOWS\system32\cmd.exe /c hostname > "C:\Users\lalmeras\AppData\Local\Temp\is-3UOCB.tmp\hostname.txt"
+2026-08-08 00:37:47.967   NX> 700 Result: OK (0)
+2026-08-08 00:37:47.980   NX> 700 C:\ProgramData\NoMachine already exists.
+2026-08-08 00:37:47.980   NX> 700 Running: C:\WINDOWS\system32\takeown.exe /F C:\ProgramData\NoMachine /A
+2026-08-08 00:37:48.123   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.123   NX> 700 Running: C:\WINDOWS\system32\takeown.exe /F C:\ProgramData\NoMachine\nxserver\ /A
+2026-08-08 00:37:48.218   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.218   NX> 700 Running: C:\WINDOWS\system32\icacls.exe C:\ProgramData\NoMachine /reset
+2026-08-08 00:37:48.317   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.317   NX> 700 Running: C:\WINDOWS\system32\icacls.exe C:\ProgramData\NoMachine /inheritance:r /grant:r *S-1-5-32-544:(F) /grant:r *S-1-3-0:(F) /grant:r *S-1-1-0:(RX) /grant:r *S-1-5-32-545:(RX)
+2026-08-08 00:37:48.410   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.410   NX> 700 Running: C:\WINDOWS\system32\icacls.exe C:\ProgramData\NoMachine\nxserver\ /reset
+2026-08-08 00:37:48.492   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.492   NX> 700 Running: C:\WINDOWS\system32\icacls.exe C:\ProgramData\NoMachine\nxserver\ /inheritance:r /grant:r *S-1-5-32-544:(F) /grant:r *S-1-3-0:(F) /grant:r *S-1-1-0:(RX) /grant:r *S-1-5-32-545:(RX)
+2026-08-08 00:37:48.575   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.575   NX> 700 Running: C:\WINDOWS\system32\icacls.exe C:\ProgramData\NoMachine\var\ /grant:r *S-1-5-18:(OI)(CI)(F) /grant:r *S-1-5-32-544:(OI)(CI)(F) /grant:r *S-1-3-0:(OI)(CI)(IO)(F) /grant:r *S-1-5-32-545:(OI)(CI)(RX) /grant:r *S-1-5-32-545:(CI)(WD,AD,WEA,WA)
+2026-08-08 00:37:48.720   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.720   NX> 700 Running: C:\WINDOWS\system32\icacls.exe C:\ProgramData\NoMachine\nxhtd\ /grant:r *S-1-5-18:(OI)(CI)(F) /grant:r *S-1-5-32-544:(OI)(CI)(F) /grant:r *S-1-3-0:(OI)(CI)(IO)(F) /grant:r *S-1-5-32-545:(OI)(CI)(RX) /grant:r *S-1-5-32-545:(CI)(WD,AD,WEA,WA)
+2026-08-08 00:37:48.885   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.885   NX> 700 Running: C:\WINDOWS\system32\icacls.exe C:\ProgramData\NoMachine\nxserver\localhost\ /grant:r *S-1-5-18:(OI)(CI)(F) /grant:r *S-1-5-32-544:(OI)(CI)(F) /grant:r *S-1-3-0:(OI)(CI)(IO)(F) /grant:r *S-1-5-32-545:(OI)(CI)(RX) /grant:r *S-1-5-32-545:(CI)(WD,AD,WEA,WA)
+2026-08-08 00:37:48.994   NX> 700 Result: OK (0)
+2026-08-08 00:37:48.994   NX> 700 Running: C:\WINDOWS\system32\cmd.exe /c "dir /a:-d /b/s "C:\ProgramData\NoMachine\"*.dll "C:\ProgramData\NoMachine\"*.exe > "C:\Users\lalmeras\AppData\Local\Temp\is-3UOCB.tmp\dllexe_list.txt""
+2026-08-08 00:37:49.163   NX> 700 Result: OK (0)
+2026-08-08 00:37:52.604   NX> 700 Running: C:\WINDOWS\system32\cmd.exe /c ""C:\Program Files\NoMachine\bin\nxserver.exe" --subscription > "C:\Users\lalmeras\AppData\Local\Temp\is-3UOCB.tmp\expiration_message.txt""
+2026-08-08 00:37:52.604   NX> 700 Result: OK (0)
+2026-08-08 00:37:52.630   NX> 700 Previous license file found.
+2026-08-08 00:37:52.630   NX> 700 Installed version is: NoMachine
+2026-08-08 00:37:52.630   NX> 700 Product version id is: WS
+2026-08-08 00:37:52.630   NX> 700 Package version is: NoMachine Personal Edition
+2026-08-08 00:37:52.630   NX> 700 Two different NoMachine packages can't be installed at the same time on the same host.
+                          Be sure you uninstall NoMachine before installing a different NoMachine product.
+2026-08-08 00:37:52.630   NX> 700 NoMachine Enterprise Client is not installed
+2026-08-08 00:37:52.630   Failed to proceed to next wizard page; aborting.
+2026-08-08 00:37:52.630   Got EAbort exception.
+2026-08-08 00:37:52.630   Deinitializing Setup.
+2026-08-08 00:37:52.635   Log closed.

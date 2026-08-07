@@ -27,12 +27,12 @@ $packageArgs = @{
 
   softwareName   = 'NoMachine*'
   
-  url            = 'https://web9001.nomachine.com/download/9.8/Windows/nomachine_9.8.2_1_x86.exe'
-  checksum       = 'f8eca4a0787fe32345e46ffa1b1b5087'
+  url            = 'https://web9001.nomachine.com/download/10.0/Windows/nomachine-personal-edition_10.0.57_2_x86.exe'
+  checksum       = '07fb9df1a9a0ea0a29a45c3baf2187dc'
   checksumType   = 'md5'
   
-  url64          = 'https://web9001.nomachine.com/download/9.8/Windows/nomachine_9.8.2_1_x64.exe'
-  checksum64     = '26ae4064ff60c205a4076910ab13ba62'
+  url64          = 'https://web9001.nomachine.com/download/10.0/Windows/nomachine-personal-edition_10.0.57_2_x64.exe'
+  checksum64     = 'c4fa3a465d76e7d99eab2edeae1493cd'
   checksumType64 = 'md5'
 
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP-'
@@ -49,7 +49,7 @@ try {
 	}
 	Install-ChocolateyPackage @packageArgs
 } catch {
-	Write-Warning 'Error installing package. If you update from 8.2.4.9 on a 64bit environment'
-	Write-Warning 'you need to uninstall nomachine and reinstall it.'
+	Write-Warning 'Error installing package. If you update from <10.0 version, you need to uninstall/install nomachine package.'
+	Write-Warning '(nomachine no longer provides a nomachine package, and 10.0 update needs to switch to personal edition package).'
 	Exit 1
 }
